@@ -16,11 +16,11 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
 // Routing
 
-require('./app/routing/api-routes.js')(app); 
-require('./app/routing/html-routes.js')(app);
+require('./app/routing/apiRoutes.js')(app); 
+require('./app/routing/htmlRoutes.js')(app);
 
 // Listening
 
 app.listen(process.env.PORT || 3000, function(){
-	console.log('App listening on PORT ' + process.env.PORT);
+	console.log('App listening on PORT: ' + process.env.PORT);
 });
